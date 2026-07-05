@@ -1,7 +1,7 @@
 /*BEGINNER LEVEL
 using Inheritance concept we make a 
 vehical mangement system which improve us inheritance concept in real wortld senerio
-Problem Staement :Create a base class vehicle and derive threee classes:1.CAR,2.BIKE,3.TRUK
+Problem Statement :Create a base class vehicle and derive threee classes:1.CAR,2.BIKE,3.TRUK
 Each vehicle should have:
 BRAND
 MODEL
@@ -38,26 +38,26 @@ protected:
 };
 
 //child class1
-class car:public Vehicle{
+class Car:public Vehicle{
     public:
-    car(string b,string m):Vehicle(b,m){}
+    Car(string b,string m):Vehicle(b,m){}
     void fueltype(){
         cout<<"Fuel Type: Petrol"<<endl;
     }
 } ;
 //class2
-class bike:public Vehicle{
+class Bike:public Vehicle{
     public:
-    bike(string b,string m):Vehicle(b,m){}
+    Bike(string b,string m):Vehicle(b,m){}
 
     void helmetrequired(){
         cout<<"Helmet Required: Yes"<<endl;
     }
 };
 //class3
-class truck:public Vehicle{
+class Truck:public Vehicle{
     public:
-    truck(string b,string m):Vehicle(b,m){}
+    Truck(string b,string m):Vehicle(b,m){}
 
     void loadcapacity(){
         cout<<"load capacity:20 tons"<<endl;
@@ -65,7 +65,7 @@ class truck:public Vehicle{
 };
 
 int main(){
-    car c("Toyota","Fortuner");
+    Car c("Toyota","Fortuner");
 
     cout<<".........CAR..........."<<endl;
 
@@ -76,7 +76,7 @@ int main(){
     cout<<endl;
 
 
-    bike b("honda","shine");
+    Bike b("honda","shine");
     cout<<".........BIKE..........."<<endl;
 
     b.displayDetails();
@@ -86,7 +86,7 @@ int main(){
     cout<<endl;
 
 
-    truck t("Tata","Signa");
+    Truck t("Tata","Signa");
     cout<<".........TRUCK..........."<<endl;
 
     t.displayDetails();
